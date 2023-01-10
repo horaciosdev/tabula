@@ -1,0 +1,26 @@
+<div class="card" cdkDrag>
+  <div class="card-header">
+    <h3 class="card-title">{{ id }}</h3>
+    <div class="card-labels">
+      <span class="label label-default">Label 1</span>
+      <span class="label label-default">Label 2</span>
+    </div>
+  </div>
+  <div class="card-body">
+    <p class="card-description">Task description goes here</p>
+    <p class="card-assignee"><strong>Assigned to:</strong> John Doe</p>
+  </div>
+  <div class="card-footer">
+    <div class="card-due-date"><strong>Due:</strong> January 1, 2023</div>
+    <div class="card-progress">
+      <div class="card-progress">
+        <mat-progress-bar
+          class="progress-bar"
+          mode="determinate"
+          value="75"
+        ></mat-progress-bar>
+        <div class="progress-label">75% Complete</div>
+      </div>
+    </div>
+  </div>
+</div>

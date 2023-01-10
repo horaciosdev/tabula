@@ -1,0 +1,57 @@
+// Define variables for colors and fonts
+$primary-color: #0099cc;
+$secondary-color: #f0f0f0;
+$tertiary-color: #ccc;
+
+// Style the column
+.column {
+  background-color: $secondary-color;
+  border: 1px solid $tertiary-color;
+  border-radius: 4px;
+  min-height: 500px;
+  width: 300px;
+  overflow: hidden;
+}
+
+// Style the column header
+.column-header {
+  background-color: $primary-color;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.column-title {
+  font-size: 18px;
+  margin: 0;
+}
+
+.add-card-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  outline: none;
+  padding: 0;
+}
+
+.add-card-button:hover {
+  color: #ccc;
+}
+
+// Style the column body
+.column-body {
+  overflow-y: auto;
+  padding: 16px;
+  min-height: 60px;
+}
+
+// Style the column footer
+.column-footer {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 16px;
+}

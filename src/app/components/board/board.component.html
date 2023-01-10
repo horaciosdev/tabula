@@ -1,0 +1,20 @@
+<div class="board">
+  <div class="board-header">
+    <h1 class="board-title">Board Title</h1>
+    <div class="board-actions">
+      <button class="add-column-button">Add Column</button>
+      <button class="settings-button">Settings</button>
+    </div>
+  </div>
+  <div *ngIf="board" class="board-body" cdkDropListGroup>
+    <app-column [board]="board"></app-column>
+  </div>
+  <div class="board-footer">
+    <div class="board-info">
+      <span class="board-created-date">Created on January 1, 2023</span>
+      <span class="board-last-modified-date"
+        >Last modified on January 2, 2023</span
+      >
+    </div>
+  </div>
+</div>

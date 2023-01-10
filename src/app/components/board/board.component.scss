@@ -1,0 +1,75 @@
+$primary-color: #0099cc;
+$secondary-color: #f0f0f0;
+$tertiary-color: #333;
+
+app-column {
+  display: contents;
+}
+
+// Style the board
+.board {
+  display: flex;
+  flex-direction: column;
+}
+
+// Style the board header
+.board-header {
+  background-color: $primary-color;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.board-title {
+  font-size: 36px;
+  margin: 0;
+}
+
+.board-actions {
+  display: flex;
+}
+
+.add-column-button,
+.settings-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  outline: none;
+  padding: 0;
+}
+
+.add-column-button:hover,
+.settings-button:hover {
+  color: #ccc;
+}
+
+// Style the board body
+.board-body {
+  display: flex;
+  flex: 1;
+  overflow-x: auto;
+  justify-content: left;
+  gap: 5px;
+  padding: 10px;
+}
+
+// Style the board footer
+.board-footer {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 16px;
+}
+
+.board-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.board-created-date,
+.board-last-modified-date {
+  font-size: 14px;
+}

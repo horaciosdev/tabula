@@ -1,0 +1,54 @@
+// Define variables for colors and fonts
+$primary-color: #0099cc;
+$secondary-color: #f0f0f0;
+$tertiary-color: #333;
+
+// Style the header
+header {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 16px;
+}
+
+// Style the container
+.container {
+  display: flex;
+}
+
+// Style the sidebar
+aside {
+  background-color: $secondary-color;
+  color: $tertiary-color;
+  width: 20%;
+}
+
+// Style the menu
+aside ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside a {
+  display: block;
+  font-size: 18px;
+  color: $tertiary-color;
+  text-decoration: none;
+  padding: 8px 0;
+}
+
+aside a:hover {
+  color: #555;
+}
+
+// Style the main content area
+main {
+  flex: 1;
+}
+
+// Style the footer
+footer {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 16px;
+}

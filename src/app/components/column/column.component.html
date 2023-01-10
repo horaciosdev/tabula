@@ -1,0 +1,18 @@
+<div class="column" *ngFor="let column of board?.columns">
+  <div class="column-header">
+    <h2 class="column-title">Column {{ column.id }}</h2>
+    <button class="add-card-button">Add Card</button>
+  </div>
+  <div
+    *ngIf="column.cards"
+    class="column-body"
+    cdkDropList
+    [cdkDropListData]="column.cards"
+    (cdkDropListDropped)="drop($event)"
+  >
+    <app-card *ngFor="let card of column.cards" [id]="card.id"></app-card>
+  </div>
+  <div class="column-footer">
+    <!-- footer content goes here -->
+  </div>
+</div>
