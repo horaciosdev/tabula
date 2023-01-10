@@ -4,7 +4,7 @@ import {
   moveItemInArray,
   transferArrayItem,
 } from '@angular/cdk/drag-drop';
-import { Board } from 'src/app/interfaces/board';
+import { Column } from 'src/app/interfaces/column';
 import { Card } from 'src/app/interfaces/card';
 
 @Component({
@@ -13,7 +13,7 @@ import { Card } from 'src/app/interfaces/card';
   styleUrls: ['./column.component.scss'],
 })
 export class ColumnComponent {
-  @Input() board?: Board;
+  @Input() column?: Column;
 
   drop(event: CdkDragDrop<any>) {
     if (event.previousContainer === event.container) {
@@ -29,6 +29,16 @@ export class ColumnComponent {
         event.previousIndex,
         event.currentIndex
       );
+    }
+  }
+
+  addCard(): void {
+    let newCard: Card = {
+      id: 10,
+      title: 'New Card',
+    };
+    if (this.column) {
+      this.column.cards = [...this.column.cards, newCard];
     }
   }
 }

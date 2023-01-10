@@ -1,7 +1,7 @@
-<div class="column" *ngFor="let column of board?.columns">
+<div *ngIf="column" class="column">
   <div class="column-header">
     <h2 class="column-title">Column {{ column.id }}</h2>
-    <button class="add-card-button">Add Card</button>
+    <button class="add-card-button" (click)="addCard()">Add Card</button>
   </div>
   <div
     *ngIf="column.cards"

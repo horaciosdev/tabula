@@ -9,7 +9,7 @@
     </div>
   </div>
   <div *ngIf="board" class="board-body" cdkDropListGroup>
-    <app-column [board]="board"></app-column>
+    <app-column *ngFor="let column of board?.columns" [column]="column"></app-column>
   </div>
   <div class="board-footer">
     <div class="board-info">
