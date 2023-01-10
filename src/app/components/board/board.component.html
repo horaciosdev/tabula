@@ -2,8 +2,10 @@
   <div class="board-header">
     <h1 class="board-title">Board Title</h1>
     <div class="board-actions">
-      <button class="add-column-button">Add Column</button>
-      <button class="settings-button">Settings</button>
+      <button class="button add-column-button" (click)="addColumn()">
+        Add Column
+      </button>
+      <button class="button settings-button">Settings</button>
     </div>
   </div>
   <div *ngIf="board" class="board-body" cdkDropListGroup>

@@ -31,21 +31,7 @@ app-column {
   display: flex;
 }
 
-.add-column-button,
-.settings-button {
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  font-size: 14px;
-  outline: none;
-  padding: 0;
-}
 
-.add-column-button:hover,
-.settings-button:hover {
-  color: #ccc;
-}
 
 // Style the board body
 .board-body {

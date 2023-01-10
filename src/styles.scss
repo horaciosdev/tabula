@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 $body-font: "Open Sans", sans-serif;
+$primary-color: #0099cc;
+$secondary-color: #f0f0f0;
+$tertiary-color: #333;
 
 html,
 body {
@@ -14,6 +17,25 @@ body {
   box-sizing: border-box;
 }
 
+.button {
+  background-color: $tertiary-color;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 24px;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+// drag and drop css
 .cdk-drag-preview {
   box-sizing: border-box;
   border-radius: 4px;

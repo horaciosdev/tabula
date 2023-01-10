@@ -5,6 +5,7 @@ import {
   transferArrayItem,
 } from '@angular/cdk/drag-drop';
 import { Board } from 'src/app/interfaces/board';
+import { Card } from 'src/app/interfaces/card';
 
 @Component({
   selector: 'app-column',
