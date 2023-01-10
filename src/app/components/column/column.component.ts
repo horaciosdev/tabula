@@ -38,7 +38,7 @@ export class ColumnComponent {
       title: 'New Card',
     };
     if (this.column) {
-      this.column.cards = [...this.column.cards, newCard];
+      this.column.cards = [newCard, ...this.column.cards];
     }
   }
 }
